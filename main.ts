@@ -9,14 +9,14 @@ basic.forever(function () {
             maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 63)
             maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CCW, 63)
             maqueen.writeLED(maqueen.LED.LEDLeft, maqueen.LEDswitch.turnOff)
-            maqueen.writeLED(maqueen.LED.LEDLeft, maqueen.LEDswitch.turnOn)
+            maqueen.writeLED(maqueen.LED.LEDRight, maqueen.LEDswitch.turnOn)
             basic.pause(500)
         }
         if (s == false) {
             maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CCW, 63)
             maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 63)
             maqueen.writeLED(maqueen.LED.LEDLeft, maqueen.LEDswitch.turnOn)
-            maqueen.writeLED(maqueen.LED.LEDLeft, maqueen.LEDswitch.turnOff)
+            maqueen.writeLED(maqueen.LED.LEDRight, maqueen.LEDswitch.turnOff)
             basic.pause(500)
         }
     } else {
